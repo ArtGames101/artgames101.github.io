@@ -1,0 +1,32 @@
+<script>
+document.getElementsByTagName("html")[0].setAttribute("oncontextmenu", "return false");
+</script>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "ag19432") {
+alert('Taking you to Dashboard');
+window.open('https://artgames101.github.io/dashboard/46274572547625754715897382173912301274682_ver_675327563.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+<FORM>
+<h1>Dashboard</h1>
+<p>Only ArtGames101 Admins can enter!</p>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+<input type="button" value="Exit" onClick="window.open('https://artgames101.github.io/home.html')">
+</FORM>
+</CENTER>
