@@ -7,6 +7,7 @@
 <meta name="author" content="ArtGames101">
 <meta name="keywords" content="ArtGames101,Games,Python,HTML,VBS,JS">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <script>
 document.getElementsByTagName("html")[0].setAttribute("oncontextmenu", "return false");
@@ -82,6 +83,8 @@ document.getElementsByTagName("html")[0].setAttribute("oncontextmenu", "return f
 <br></br>
 <a href='https://github.com/ArtGames101' class='btn-style'>Github</a>
 <a href='https://discord.gg/ThYkXk4' class='btn-style'>Discord</a>
+<button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Dark/Light Mode 🌛</button>
+<script  src="js/index.js"></script>
 </a>
 </div>
 </header>
@@ -102,8 +105,8 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+<body id="body" class="dark-mode">
 <!--End of Tawk.to Script-->
-<body background="img/body.jpg">
 <h1>ArtGames101</h1>
 <p>A Video Game/Application Company!</p>
 <br></br>
